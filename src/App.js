@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Search from "./components/users/Search";
 import About from "./components/pages/About";
+// App.js
 const App = () => {
   return (
     <div className="App">
@@ -13,6 +14,8 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Search} />
             <Route exact path="/about" component={About} />
+            {/* Add this line to specify the routing*/}
+            <Route exact path="/user/:id" component={User} />
             <Route path="/*" component={NotFound}></Route>
           </Switch>
         </div>
