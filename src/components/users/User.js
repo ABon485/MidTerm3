@@ -2,7 +2,7 @@
 import axios from "axios";
 import React, { Fragment, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
-import Repos from "../repos/repos";
+// import Repos from "../repos/repos";
 const User = () => {
   const { id } = useParams();
   const [user, setUser] = useState({});
@@ -121,7 +121,7 @@ const User = () => {
         <div className="badge badge-light">Repository: {public_repos}</div>
         <div className="badge badge-dark">Gist: {public_gists}</div>
       </div>
-      <Repos repos={repos} />
+      {/* <Repos repos={repos} /> */}
     </Fragment>
   );
 };
