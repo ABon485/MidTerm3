@@ -259,6 +259,7 @@ img {
 .alert-light {
   background: var(--light-color);
   color: #333;
+  border-radius: 50px;
 }
 
 .btn-dark,
@@ -267,6 +268,7 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+  border-radius: 50px;
 }
 
 .btn-danger,
@@ -432,4 +434,14 @@ table th {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+body.bg-light {
+  background-color: white;
+  color: black;
+}
+
+body.bg-dark {
+  background-color: rgb(12, 12, 12);
+  color: white;
 }
